@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+    {% block content %}
+
+    {% endblock %}
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-+4v2zr+3l1JX4Gnjs3j3ZU5Z5l
+        crossoigin = "anonymous"></script>
+</body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url%}">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'productos.index'%}">productos</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</html>
